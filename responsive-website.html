@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{ font-size: 30px;}
+        .tiger img{ 
+            width: 100%;
+        }
+        .container-two{ 
+            display: flex;
+        }
+        .container-two .split{ width: 50%;}
+        .split img{ 
+            width: 100%;
+        }
+        .container{ 
+            display: grid;
+            grid-template-columns: repeat( 3, 1fr);
+            gap: 10px;
+
+        }
+        .food{ 
+            border: 2px solid indigo;
+            padding:  10px ;
+            border-radius: 10px ;
+
+        }
+        .food img{ width: 100%;}
+        
+        
+        @media screen and ( max-width: 576px){
+            .container-two{ flex-direction: column;}
+            .container-two .split{ width: 100%;}
+            .container{ 
+            grid-template-columns: repeat(1, 1fr);}
+        
+        }
+        @media screen and (min-width:577px) and (max-width:700px){
+             .container{
+                grid-template-columns: repeat(2, 1fr);
+             }
+            
+        }
+    </style>
+</head>
+<body>
+    <section> 
+        <h1>
+            My Responsive Website
+        </h1>
+    </section>
+    <section class="tiger">
+         <h3> Tiger </h3>
+         <img src="images/tiger.jpg" alt="">
+    </section>
+    <section>
+        <h2> Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+            <img src="images/food..jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="images/tiger4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2> Multi column </h2>
+        
+            <!-- .container>.food*12>img[src="images/food..jpg"]+h4{price:$00}+p>lorem15^button{Order Now} -->
+            
+            <div class="container">
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:100</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid, quam aspernatur ducimus distinctio odio!</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:200</h4>
+                    <p>Id placeat esse harum, dolor eligendi nulla quasi maxime enim nostrum consequatur commodi deleniti eius?</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:300</h4>
+                    <p>Reiciendis expedita veritatis, repellendus ullam ad, aliquam amet consectetur quisquam ducimus officia enim dolore magni!</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:400</h4>
+                    <p>Hic praesentium illo a enim dolor veritatis corporis ad mollitia nobis corrupti provident, nihil tempora?</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:500</h4>
+                    <p>Dolore ipsum error consectetur vero unde incidunt, numquam quibusdam dolorum velit qui, adipisci, autem quia.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:600</h4>
+                    <p>Dolorem nesciunt, aperiam, nostrum, in ut suscipit rerum non facilis consequatur repellat provident nisi ex?</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:700</h4>
+                    <p>Repellat quod provident, omnis sint inventore debitis nostrum ducimus vitae quo quos adipisci? Explicabo, aliquam!</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:800</h4>
+                    <p>Vero autem facilis hic temporibus magnam neque officiis consequuntur quidem, dolores, libero doloremque, tempora quibusdam?</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:900</h4>
+                    <p>Delectus eius a illo fuga unde, tenetur at quo libero voluptates expedita culpa ducimus! Eaque?</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:1000</h4>
+                    <p>Eligendi voluptas magnam consequuntur accusamus natus facilis nobis obcaecati ullam excepturi. Iure reiciendis ex nulla.</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:1100</h4>
+                    <p>Esse deserunt laboriosam dolorem quaerat consectetur rerum animi, repellat deleniti vero optio ipsam, ut dolorum!</p>
+                    <button>Order Now</button>
+                </div>
+                <div class="food">
+                    <img src="images/food..jpg" alt="">
+                    <h4>price:1200</h4>
+                    <p>Esse impedit atque consequatur laudantium minus nostrum, autem praesentium, officiis quod dolorem distinctio, earum corrupti?</p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+    </section>
+    <!-- 
+        1. viewport meta tag 
+        2. CSS Relative unit
+        3. Responsive image ( fluid image)
+        4. body max-with and margin auto
+        5. Responsive Split screen using flex ( 2 column section)
+        6. Grid Responsive  (multi column)
+        7. Responsive Menu (bootstrap responsive)-- Future
+     -->
+    
+
+</body>
+</html>
